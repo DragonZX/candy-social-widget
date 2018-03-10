@@ -115,5 +115,5 @@ class candy_social_widget extends WP_Widget {
 }
 
 // register widget
-add_action( 'widgets_init', create_function( '', "return register_widget( 'candy_social_widget' );" ) );
+add_action( 'widgets_init', function(){ return register_widget( 'candy_social_widget' );} );
 ?>
